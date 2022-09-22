@@ -1,0 +1,1 @@
+window.document.write('<br>Olá, mundo!');
