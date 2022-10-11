@@ -1,23 +1,29 @@
-//Selecionando o Body no HTML(window.document.body);
-var corpo = window.document.body;
-corpo.style.background = 'green'; // trocou a cor de fundo
+window.document.write('<br>Olá, Mundo!<br>')
+window.document.write(window.document.charset)
+window.document.write('<br>' + window.navigator.appName + '<br>')
+window.document.write(window.document.URL)
 
-//Selecionando uma tag no HTML(getElementsByTagName()), como tem dois paragrafos, utiliza o indice dentro de colchetes para selecionar;
-var p1 = window.document.getElementsByTagName('p')[0];
-p1.style.color = 'black'; //trocou a cor da fonte
+/* Por Marca = getElementsByTagName('nome da tag')*/
+var p1 = window.document.getElementsByTagName('p')[0]
+//window.document.write('<br>Está escrito assim: ' + p1.innerText)
+p1.style.color = 'blue'
 
-//Selecionando uma ID no HTML(getElementsById());
-var mensagem = window.document.getElementById('msg');
-mensagem.style.background = 'blue'; //trocou a cor de fundo
-mensagem.innerText = 'Olá';//trocou o conteudo escrito 
+var p2 = window.document.getElementsByTagName('p')[1]
+window.document.write('<br>' + p2.innerHTML)
 
-//Selecionando pela propriedade Name no HTML(getElementsByName());
-//Selecionando pela classe no HTML(getElementsByClassName());
+var corpo = window.document.body
+corpo.style.background = 'black'
 
-//Selecionar por seletor no HTML(querySelector() ou querySelectoAll);
+/* Por ID = getElementsById() */
+var d = window.document.getElementById('msg')
+d.style.background = 'green'
+//d.innerText = 'Alterando o conteúdo da div'
+window.document.getElementById('msg').innerText = 'Alterando o conteúdo da div'
 
+/* Por Nome = getElementsByName() */
+/* Por Classe = getElementsByClassName() */
 
-
-
-
+/* Por Seletor = querySelector() */
+var x = window.document.querySelector('div#msg')
+d.style.padding = '50px'
 
