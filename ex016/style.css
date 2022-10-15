@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(62, 62, 243);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+}
+
+section {
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+input[type=number],
+input[type=radio] {
+    margin: 10px;
+}
+
+input[type=button] {
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#foto {
+    width: 250px;
+}
+
+footer {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+}
